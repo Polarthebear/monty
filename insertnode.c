@@ -24,6 +24,6 @@ void insert_node(stack_t **head, int n)
 	}
 	new->n = n;
 	new->next = *head;
-	new->prev->NULL;
+	new->prev = NULL;
 	*head = new;
 }
