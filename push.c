@@ -17,7 +17,7 @@ void push_(stack_t **head, unsigned int count)
 		{
 			j++;
 		}
-		for (; bear.arg != '\0'; j++)
+		for (; bear.arg[j] != '\0'; j++)
 		{
 			if (bear.arg[j] > 57 || bear.arg[j] < 48)
 				flag = 1;
