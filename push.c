@@ -35,7 +35,7 @@ void push_(stack_t **head, unsigned int count)
 		fprintf(stderr, "L%d: usage: push integer\n", count);
 		fclose(bear.file);
 		free(bear.content);
-		free_stack(*head);
+		release_stack(*head);
 		exit(EXIT_FAILURE);
 	}
 

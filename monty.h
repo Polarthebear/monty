@@ -61,5 +61,7 @@ typedef struct instruction_s
 
 /*Function Prototypes*/
 void push_(stack_t **head, unsigned int count);
+void release_stack(stack_t *head);
+
 
 #endif
