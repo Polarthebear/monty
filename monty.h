@@ -63,5 +63,6 @@ typedef struct instruction_s
 void push_(stack_t **head, unsigned int count);
 void release_stack(stack_t *head);
 void insert_node(stack_t **head, int n);
+void insert_queue(stack_t **head, int n);
 
 #endif
