@@ -7,6 +7,8 @@
 #include <stdlib.h>
 #include <ctype.h>
 #include <stdarg.h>
+#include <sys/types.h>
+#include <fcntl.h>
 
 /**
  * struct stack_s - doubly linked list representation of a stack (or queue)
@@ -24,6 +26,23 @@ typedef struct stack_s
         struct stack_s *next;
 } stack_t;
 
+/**
+ * struct bear_s - Main entry point
+ * Description: args, file & line content
+ * @arg: value
+ * @file: pointer to monty
+ * @content: line_content
+ * @lifi: flag change
+ */
+typedef struct bear_s
+{
+	char *arg;
+	FILE *file;
+	char *content;
+	int lifi;
+} bear_t;
+extern bear_t bear;
+
 
 /**
  * struct instruction_s - opcode and its function
@@ -40,3 +59,7 @@ typedef struct instruction_s
 } instruction_t;
 
 
+/*Function Prototypes*/
+void push_(stack_t **head, unsigned int count);
+
+#endif
