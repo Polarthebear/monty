@@ -44,6 +44,6 @@ void push_(stack_t **head, unsigned int count)
 	if (bear.lifi == 0)
 		insert_node(head, i);
 	else
-		addqueue(head, i);
+		insert_queue(head, i);
 }
 
