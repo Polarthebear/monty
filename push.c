@@ -8,14 +8,16 @@
  */
 void push_(stack_t **head, unsigned int count)
 {
-	int i, j;
+	int i, j = 0;
 	int flag = 0;
 
 	if (bear.arg)
 	{
 		if (bear.arg[0] == '-')
+		{
 			j++;
-		for (j = 0; bear.arg != '\0'; j++)
+		}
+		for (; bear.arg != '\0'; j++)
 		{
 			if (bear.arg[j] > 57 || bear.arg[j] < 48)
 				flag = 1;
