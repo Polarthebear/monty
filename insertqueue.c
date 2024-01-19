@@ -6,7 +6,7 @@
  * @head: head
  * @n: new value
  */
-void insertqueue(stack_t **head, int n)
+void insert_queue(stack_t **head, int n)
 {
 	stack_t *new, *tmp;
 
