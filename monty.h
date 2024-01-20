@@ -68,7 +68,7 @@ void release_stack(stack_t *head);
 void insert_node(stack_t **head, int n);
 void insert_queue(stack_t **head, int n);
 int main(int argc, char *argv[]);
-void pall_(stack_t **head, unsigned int count);
+void pint_(stack_t **head, unsigned int count);
 
 
 #endif
