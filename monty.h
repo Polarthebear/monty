@@ -1,6 +1,7 @@
 #ifndef MONTY_H
 #define MONTY_H
 
+#define _POSIX_C_SOURCE 200809L
 #include <stdio.h>
 #include <unistd.h>
 #include <string.h>
@@ -62,8 +63,10 @@ typedef struct instruction_s
 /*Function Prototypes*/
 void push_(stack_t **head, unsigned int count);
 void pall_(stack_t **head, unsigned int count);
+int exec(char *content, stack_t **stack, unsigned int count, FILE *file);
 void release_stack(stack_t *head);
 void insert_node(stack_t **head, int n);
 void insert_queue(stack_t **head, int n);
+int main(int argc, char *argv[]);
 
 #endif
