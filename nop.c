@@ -9,5 +9,5 @@
 void nop_(stack_t **head, unsigned int count)
 {
 	(void) head;
-	(void) counter;
+	(void) count;
 }
