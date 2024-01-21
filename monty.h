@@ -70,6 +70,7 @@ void insert_queue(stack_t **head, int n);
 int main(int argc, char *argv[]);
 void pint_(stack_t **head, unsigned int count);
 void pop_(stack_t **head, unsigned int count);
+void swap_(stack_t **head, unsigned int count);
 
 
 #endif

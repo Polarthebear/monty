@@ -14,7 +14,7 @@ int exec(char *content, stack_t **stack, unsigned int count, FILE *file)
 	instruction_t opp_stack[] = 
 	{
 		{"push", push_}, {"pall", pall_}, {"pint", pint_},
-		{"pop", pop_}, {NULL, NULL},
+		{"pop", pop_}, {"swap", swap_}, {NULL, NULL},
 	};
 
 	unsigned int i = 0;
