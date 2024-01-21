@@ -17,7 +17,7 @@ void sub_(stack_t **head, unsigned int count)
 		tmp = tmp->next;
 	if (node < 2)
 	{
-		fprintf(stderr, "L5d: can't sub, stack too short\n", count);
+		fprintf(stderr, "L%d: can't sub, stack too short\n", count);
 		fclose(bear.file);
 		free(bear.content);
 		release_stack(*head);
