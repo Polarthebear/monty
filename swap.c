@@ -18,7 +18,7 @@ void swap_(stack_t **head, unsigned int count)
 		h = h->next;
 		leng++;
 	}
-	if (leng > 2)
+	if (leng < 2)
 	{
 		fprintf(stderr, "L%d: can't swap, stack too short\n", count);
 		fclose(bear.file);
