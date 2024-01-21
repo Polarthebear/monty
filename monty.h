@@ -73,6 +73,7 @@ void pop_(stack_t **head, unsigned int count);
 void swap_(stack_t **head, unsigned int count);
 void add_(stack_t **head, unsigned int count);
 void nop_(stack_t **head, unsigned int count);
+void sub_(stack_t **head, unsigned int count);
 
 
 #endif
